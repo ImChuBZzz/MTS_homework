@@ -10,16 +10,15 @@ public class HasSameOccurences {
         }
         return count;
     }
-    public static boolean hasSameOccurences(String str) {
-        int flag = 1, cur, prev;
-
-        prev = letterCount(str, str.charAt(0));
+    public static boolean hasSameOccurrence(String str) {
+        int cur, prev = letterCount(str, str.charAt(0));
+        boolean flag = true;
 
         for(int i = 1; i < str.length(); i++) {
            cur = letterCount(str, str.charAt(i));
-           if (prev == cur) { flag *= 1; }
-           else { flag *= 0; }
+           if (prev != cur) { flag = false; break; }
+           prev = cur;
         }
-        return flag == 1;
+        return flag;
     }
 }

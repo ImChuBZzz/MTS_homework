@@ -35,10 +35,10 @@ public class Main {
         System.out.println();
 
         System.out.println("пятая задача:");
-        System.out.println(HasSameOccurences.hasSameOccurences("abcabcabcddd"));
-        System.out.println(HasSameOccurences.hasSameOccurences("abc"));
-        System.out.println(HasSameOccurences.hasSameOccurences("abcab"));
-        System.out.println(HasSameOccurences.hasSameOccurences("aa"));
+        System.out.println(HasSameOccurences.hasSameOccurrence("abcabcabcddd"));
+        System.out.println(HasSameOccurences.hasSameOccurrence("abc"));
+        System.out.println(HasSameOccurences.hasSameOccurrence("abcab"));
+        System.out.println(HasSameOccurences.hasSameOccurrence("aabbba"));
         System.out.println();
 
     }
