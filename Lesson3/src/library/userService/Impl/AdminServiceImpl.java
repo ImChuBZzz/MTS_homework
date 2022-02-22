@@ -5,12 +5,12 @@ import library.userService.AdminService;
 
 public class AdminServiceImpl implements AdminService {
     @Override
-    public void ban(Client client) {
+    public void banUser(Client client) {
         client.setBanned(true);
     }
 
     @Override
-    public void unBan(Client client) {
+    public void unbanUser(Client client) {
         client.setBanned(false);
     }
 }

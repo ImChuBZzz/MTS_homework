@@ -3,6 +3,6 @@ package library.userService;
 import library.data.Client;
 
 public interface AdminService {
-    void ban(Client client);
-    void unBan(Client client);
+    void banUser(Client client);
+    void unbanUser(Client client);
 }

@@ -20,7 +20,8 @@ public class App {
 
         LibraryAPIService libraryAPIService = new LibraryAPIServiceImpl(adminService, clientService);
 
-        Client client = new Client("Putin", "V.", "V.", "88005553535");
+        Client client1 = new Client("Putin", "V.", "V.", "88005553535");
+        Client client2 = new Client("Medvedev", "D.", "A.", "88005553536");
         Admin admin = new Admin("Smith", "Bob", "Marry-Ann", "555-2342-12");
 
         Book book1 = new Book("The Lord of the Rings", "J. R. R. Tolkien");
@@ -32,16 +33,16 @@ public class App {
         books1.add(book1);
         books1.add(book2);
 
-        libraryAPIService.takeBooks(client, books1);
-        System.out.println(client.getBooks());
+        libraryAPIService.takeBooks(client1, books1);
         books2.add(book3);
-        libraryAPIService.ban(admin, client);
-        libraryAPIService.takeBooks(client, books2);
-        System.out.println(client.getBooks());
+        libraryAPIService.takeBooks(client1, books2);
         books1.remove(0);
-        libraryAPIService.returnBooks(client, books1);
-        System.out.println(client.getBooks());
+        libraryAPIService.returnBooks(client1, books1);
+        System.out.println(client1.getBooks());
 
+        libraryAPIService.banUser(admin, client2);
+        libraryAPIService.takeBooks(client2, books2);
+        libraryAPIService.unbanUser(admin, client2);
 
 
 
