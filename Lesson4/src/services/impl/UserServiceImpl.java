@@ -58,9 +58,11 @@ public class UserServiceImpl implements UserService {
     public void deleteUsers(List<String> ids) {
         User user;
         for(String s: ids) {
-            user = userRepository.getBy(s);
-            user.setUserStatus(UserStatus.DELETED);
-            this.userRepository.save(user);
+            if (userRepository.getBy(s) != null) {
+                user = userRepository.getBy(s);
+                user.setUserStatus(UserStatus.DELETED);
+                this.userRepository.save(user);
+            }
         }
     }
 
