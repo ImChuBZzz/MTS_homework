@@ -44,11 +44,5 @@ public class App {
         libraryAPIService.takeBooks(client2, books2);
         libraryAPIService.unbanUser(admin, client2);
 
-
-
-
-
-
-
     }
 }

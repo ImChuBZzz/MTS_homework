@@ -15,7 +15,7 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public List<User> getAll() {
-        return  this.users;
+        return this.users;
     }
 
     @Override
@@ -25,29 +25,20 @@ public class UserRepositoryImpl implements UserRepository {
             if(user.getId().equals(id)) {
                 ourUser = user;
                 break;
-            }
-            else { ourUser = null; }
-
+            } // тут без элса норм
         }
         return ourUser;
     }
 
     @Override
     public User save(User user) {
-        boolean check = true;
-        int index = 0;
-        for (User u: this.users) {
-            if (user.getId().equals(u.getId())) {
-                check = false;
-                index = users.indexOf(u);
-                break;
-            }
+        int indexOfUser = this.users.indexOf(user); // здесь можно заюзать indexOf с определением equals
+        if (indexOfUser != -1) {
+            this.users.set(indexOfUser, user);
+            return user;
         }
-        if (check) { this.users.add(user); }
-        else { users.set(index, user); }
-
-
-        return check ? user : users.get(index);
+        this.users.add(user);
+        return user;
     }
 
     @Override
@@ -55,5 +46,4 @@ public class UserRepositoryImpl implements UserRepository {
         for(User u: users) { this.save(u); }
         return this.users;
     }
-
 }

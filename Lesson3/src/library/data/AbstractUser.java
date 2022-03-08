@@ -1,6 +1,6 @@
 package library.data;
 
-public class AbstractUser {
+public abstract class AbstractUser { // тут класс все же должен быть абстрактным, тк создание его экземпляров не предусматривается
     private String surname;
     private String name;
     private String secondName;

@@ -3,8 +3,6 @@ package library.libraryService;
 import library.data.Admin;
 import library.data.Book;
 import library.data.Client;
-
-
 import java.util.List;
 
 public interface LibraryAPIService {
