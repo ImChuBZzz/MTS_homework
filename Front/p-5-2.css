@@ -1,0 +1,13 @@
+body {
+    background: whitesmoke;
+            width: 200px; height: 200px;
+            text-align: center;
+            font: 100px/200px serif;
+            border: 25px solid turquoise;
+            border-right: 25px solid teal;
+            border-radius: 200px;
+}
+
+span {
+    font-size: 50%;
+}

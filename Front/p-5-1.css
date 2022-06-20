@@ -1,0 +1,27 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table td, table th{
+    border: 1px solid #ccc;
+    padding: 5px 10px 10px 5px;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f0f1f4;
+}
+
+tfoot {
+    background: grey;
+    color: #fff;
+    text-align: right;
+}
+
+tbody {
+    text-align: center;
+}

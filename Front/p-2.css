@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.title {
+    size: 40px;
+    color: #f03333;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    size: 30px;
+    color: #12ac11;
+    line-height: 1.2;
+    text-decoration: underline;
+}
+
+.list {
+    size: 50px;
+    color: rgb(219, 216, 216);
+    font-style: italic;
+    list-style-type: square;
+}

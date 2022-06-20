@@ -1,0 +1,52 @@
+form{
+    position:relative;
+    display: table;
+    padding: 70px 15px 5px 5px;
+    width: 350px;
+    border: 5px solid black;
+    color: black;
+    overflow: hidden;
+    background: grey;
+  }
+
+  p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.8em 0.7em;
+    font-size: 150%;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-top: 0;
+    border-bottom: 2px solid black;
+  }
+
+  input{
+    display: table-cell;
+    margin-bottom: 20px;
+  }
+ #email{
+    width: 96%;
+  }
+
+  label{
+    display: inline-block;
+    width: 49.3%;
+  }
+
+  #pas{
+      margin-right: 3%;
+      width: 44%;
+  }
+
+  #re_pas {
+    width: 44%;
+  }
+  
+
+  input[type="submit"]{
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 0px 10px 0px 0px;
+  }
