@@ -32,6 +32,7 @@ public class ShouldHaveExceptedValuesTest extends BaseTest {
                 .withLocale(new Locale("ru"))
                 .format(date);
     }
+
     @Before
     public void letsGo() {
         StartPage startPage = new StartPage();
@@ -41,12 +42,13 @@ public class ShouldHaveExceptedValuesTest extends BaseTest {
                 .setAdultCount(ADULT_COUNT)
                 .searchResults();
     }
+
     @Test
     public void shouldHaveExceptedValuesTest() {
 
         //letsGo();
 
-        By propertyFound = By.cssSelector("h1.e1f827110f.d3a14d00da");                                                      // локатор на кол-во предложений
+        By propertyFound = By.xpath("//h1[@class='e1f827110f d3a14d00da']");                                                      // локатор на кол-во предложений
         ElementsCollection propertyCards = $$x("//*[@data-testid='property-card']");                           // коллекция карточек с отелями на странице
         int propertyCount = Integer.parseInt($(propertyFound).getText().replaceAll("[^0-9]", ""));          // достаем кол-во доступных вариантов для бронирования в ввиде числа
         int propertyCardsCount = propertyCards.size();
@@ -69,7 +71,6 @@ public class ShouldHaveExceptedValuesTest extends BaseTest {
         String exceptedOccupancyInfo = ($(peopleInput).getText().replaceAll("[^\\w]", ""));                 // делаем из 1 взрослые . 0 дети . 1 комната строку 101 PS первое чт опришло в голову
         String testOccupancyInfo = ADULT_COUNT.toString() + CHILDREN_COUNT.toString() + ROOM_COUNT.toString();
         Assert.assertEquals(exceptedOccupancyInfo, testOccupancyInfo);
-
     }
 
 }

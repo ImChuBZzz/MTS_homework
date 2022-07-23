@@ -15,8 +15,8 @@ public abstract class BaseTest {
 
     @Before
     public void init() {
-        WebDriverManager.edgedriver().cachePath("D:\\Apps\\drivers\\edge").setup();
-        Configuration.browser = "edge";
+        WebDriverManager.chromedriver().cachePath("D:\\Apps\\drivers\\chrome").setup();
+        Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.headless = false;
         Configuration.browserSize = "1280x960";

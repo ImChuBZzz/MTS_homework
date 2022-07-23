@@ -9,7 +9,7 @@ import static tests.BaseTest.cfg;
 
 public class ExcursionPage {
 
-    private final By ACCEPT_COOKIES =  By.xpath("//*[@id='onetrust-accept-btn-handler']");
+    private final By ACCEPT_COOKIES = By.xpath("//*[@id='onetrust-accept-btn-handler']");
     private final By SELECT_EXCURSION_MENU = By.xpath("//*[@class='bui-tab__item'][4]");
     private final By SELECT_PLACE_FOR_EXCURSION = By.xpath("//*[@name='query']");
     private final By CLICK_CHOSEN_PLACE = By.xpath("//*[@class='css-9dv5ti']/*[1]");

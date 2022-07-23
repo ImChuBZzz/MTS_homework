@@ -28,7 +28,7 @@ public class ExcursionTest extends BaseTest {
         //ElementsCollection museums = $$x("//*[@class='css-1bmkeys']").shouldBe(CollectionCondition.sizeGreaterThan(0));
         ElementsCollection museums = $$(".css-qu86ds  .css-pori7h .ac78a73c96").shouldBe(CollectionCondition.sizeGreaterThan(0));
         // здесь делаем проверку что кол-во карточек совпадает с тем, что написано около чекбокса, а если больше, то просто смотрим что не нулевое значение
-        if(museumsCount <= 60) {
+        if (museumsCount <= 60) {
             Assert.assertEquals(museumsCount, museums.size());
         } else {
             Assert.assertNotEquals(0, museums.size());
