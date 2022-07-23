@@ -33,6 +33,6 @@ public class HasFiveStarsWithMapTest {
         bookingWithMapPage.clickMapIcon()
                 .setFiveStarCheckBox()
                 .checkHotelRating(hotelRating);
-        int i = 0;
+
     }
 }
