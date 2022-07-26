@@ -34,10 +34,10 @@ public class LibraryAPIServiceImpl implements LibraryAPIService {
     public void takeBooks(Client client, List<Book> books) {
         if (client.isBanned()) {
             System.out.printf("Client %s can't take book coz he is banned\n", client.getPhoneNumber());
-        } else {
-            clientService.takeBooks(client, books);
-            System.out.printf("Client %s takes %s\n", client.getPhoneNumber(), books);
+            return;
         }
+        clientService.takeBooks(client, books);
+        System.out.printf("Client %s takes %s\n", client.getPhoneNumber(), books);
     }
 
     @Override
@@ -45,5 +45,4 @@ public class LibraryAPIServiceImpl implements LibraryAPIService {
         clientService.returnBooks(client, books);
         System.out.printf("Client %s returned %s\n", client.getPhoneNumber(), books);
     }
-
 }
