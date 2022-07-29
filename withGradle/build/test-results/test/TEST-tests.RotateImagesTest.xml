@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.RotateImagesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-29T15:17:38" hostname="DESKTOP-KT0G865" time="33.552">
+  <properties/>
+  <testcase name="rotateImagesTest()" classname="tests.RotateImagesTest" time="33.552"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (io.github.bonigarcia.wdm.cache.ResolutionCache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting Microsoft Edge WebDriver 103.0.1264.71 (1f7a1d165042010b399db54bd56390dd47e15013) on port 64282
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+июл. 29, 2022 6:17:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+июл. 29, 2022 6:17:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 103
+]]></system-err>
+</testsuite>
