@@ -7,13 +7,6 @@ import data.models.LoginRegisterRequestData;
 import data.models.LoginRegisterResponseData;
 import org.junit.Assert;
 import org.junit.Test;
-import specification.Specifications;
-
-
-import static data.endpoints.ReqresInEndpoints.LOGIN;
-import static data.endpoints.ReqresInEndpoints.REGISTER;
-import static io.restassured.RestAssured.given;
-import static org.apache.http.HttpStatus.*;
 
 public class RegisterAndLoginTest {
 

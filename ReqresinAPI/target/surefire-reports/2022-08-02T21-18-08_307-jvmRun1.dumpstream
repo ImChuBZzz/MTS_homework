@@ -1,0 +1,15 @@
+# Created at 2022-08-02T21:18:09.343
+Expecting a stackmap frame at branch target 25
+Exception Details:
+  Location:
+    tests/cud/CUDUserTest.deleteUser()V @9: invokestatic
+  Reason:
+    Expected stackmap frame at this location.
+  Bytecode:
+    0000000: b200 9b2a 2ab8 0078 4db8 007e 2cb6 0082
+    0000010: 063c 1bb8 0047 a700 0d4e b800 7e2d b600
+    0000020: 862d bfb8 007e b600 89b1               
+  Exception Handler Table:
+    bci [9, 25] => handler: 25
+
+

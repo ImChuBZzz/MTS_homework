@@ -1,0 +1,15 @@
+# Created at 2022-08-02T21:20:57.360
+Expecting a stackmap frame at branch target 26
+Exception Details:
+  Location:
+    tests/cud/CUDUserTest.createUserOnlyNameTest()V @9: invokestatic
+  Reason:
+    Expected stackmap frame at this location.
+  Bytecode:
+    0000000: b200 8c2a 2ab8 0078 4db8 007e 2cb6 0082
+    0000010: 122a 4c2b b800 2ca7 000d 4eb8 007e 2db6
+    0000020: 0086 2dbf b800 7eb6 0089 b1            
+  Exception Handler Table:
+    bci [9, 26] => handler: 26
+
+
