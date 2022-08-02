@@ -1,12 +1,12 @@
 package data.endpoints;
 
-public enum UnknownEndpoint {
+public enum UnknownEndpoints {
     UNKNOWN("api/unknown/%d"),
     UNKNOWN_LIST("api/unknown");
 
     private final String url;
 
-    UnknownEndpoint(String url) {
+    UnknownEndpoints(String url) {
         this.url = url;
     }
 
